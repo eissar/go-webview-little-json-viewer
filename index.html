@@ -1,0 +1,27 @@
+<DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title>Editor</title>
+
+
+
+            <link rel="stylesheet" href="https://unpkg.com/@speed-highlight/core/dist/themes/default.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/speed-highlight/core/dist/themes/default.css">
+
+
+        </head>
+    <body>
+        <code class="shj-lang-json" id="editor">
+            { "firstName": "John", "lastName": "Doe", "age": 30, "city": "New York" }
+        </code>
+        <script type="module" crossorigin>
+            //import ... from 'https://unpkg.com/@speed-highlight/core/dist/index.js';
+            import { highlightAll } from 'https://cdn.jsdelivr.net/gh/speed-highlight/core/dist/index.js';
+            highlightAll();
+            // loadLanguage('language-name', customLanguage);
+        </script>
+    </body>
+</html>
